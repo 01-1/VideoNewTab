@@ -1,0 +1,17 @@
+{
+    "name": "YouTube New Tab by Unum",
+    "version": "1.0.0",
+    "description": "Displays a random YouTube video from a user-defined list in newtab.",
+    "manifest_version": 2,
+    "options_page": "settings.html",
+    "browser_action": {
+        "default_popup": "settings.html"
+    },
+    "permissions": [
+      "storage"
+    ],
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+
+}
