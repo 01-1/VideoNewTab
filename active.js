@@ -12,7 +12,7 @@ window.onload = () => {
         var links = data["ytLinks"];
         if (links !== undefined) {
             shuffleArray(links);
-            document.getElementById("mainVideo").setAttribute("src",`https://www.youtube.com/embed/${links[0]}?playlist=`+links.slice(1).join(','));
+            document.getElementById("mainVideo").setAttribute("src",`https://www.youtube.com/embed/${links[0]}?playlist=`+links.join(','));
         }
     });
 }
